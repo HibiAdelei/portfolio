@@ -7,7 +7,7 @@ as well as to showcase completed projects to collectively serve as a portfolio.
 ## Usage
 Provided is a screenshot of the website
     
-![site screenshot](assets\images\portfolioscreenshot.png)
+![site screenshot](assets/images/portfolioscreenshot.png)
     
 
 ## License

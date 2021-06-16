@@ -1,0 +1,116 @@
+:root {
+    --primary-color:#e3cade;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+  body {
+      color: #8596bb;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif;
+      background-color: rgb(199, 179, 204);
+    }
+  
+  /* styles header */
+  header {
+      padding: 5px 5px;
+      background-color: #9a65b9b7;
+      display:flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  
+  header h1 {
+      font-weight: bold;
+      font-size: 40px;
+      color: var(--primary-color);
+      margin-left: 5px;
+      text-align: center;
+      
+    }
+  
+  header nav {
+      margin: 7px 0;
+    }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    }
+  
+  header nav ul li a {
+      margin: 0 30px;
+      font-weight: lighter;
+      font-size: 150%;
+      color: var(--primary-color);
+      text-decoration: none;
+      border-bottom: 2px solid;
+      padding-bottom: 2px;
+    }
+
+    .secondblock {
+      height: 20%;
+      width: 100%
+      background-image: assets\images\techbackground.png;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    
+    .avatar {
+
+    }
+
+    .aboutme-border {
+      height: 100px;
+      border-right: 2px solid #c28dc2;
+      flex: 1 2%;
+    }
+
+    .about-paragraph{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 25px 40px;  
+      width: 85%;
+      align items: center;
+/* 
+    .flex-row {
+        display: flex;
+        justify-content: left;
+      } */
+
+
+    @media screen and (max-width: 980px) {
+        header {
+          padding-bottom: 5px;
+          justify-content: center;
+        }
+      
+        header h1 {
+          width: 100%;
+          text-align: center;
+        }
+      
+        header nav ul {
+          margin-top: 12px;
+          width: 100%;
+          justify-content: center;
+          flex-direction: row;
+          line-height: 2;
+        }
+      
+        header nav ul li a {
+          font-size: 14px;
+          font-weight: bolder;
+        }

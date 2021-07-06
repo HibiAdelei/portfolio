@@ -1,6 +1,6 @@
 :root {
-    --primary-color:#31343D;
-    --secondary-color:#92CCCE;
+    --primary-color:#4b2a97;
+    --secondary-color:#b692ce;
   }
   
   * {
@@ -10,7 +10,7 @@
     }
   
   body {
-      color: #8596bb;
+      color: #3461c2;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif;
       background-color: #31343D;
     }
@@ -23,6 +23,7 @@
       justify-content: space-between;
       flex-wrap: wrap;
       text-align: center;
+      font-weight: 200;
     }
   
   header h1 {

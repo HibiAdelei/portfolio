@@ -1,6 +1,6 @@
 :root {
-    --primary-color:#4b2a97;
-    --secondary-color:#b692ce;
+    --primary-color:#a580fd;
+    --secondary-color:#826b92;
   }
   
   * {
@@ -10,9 +10,10 @@
     }
   
   body {
-      color: #3461c2;
+      color: var(--primary-color);
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif;
       background-color: #31343D;
+      font-size: 20px;
     }
   
   /* styles header */
@@ -32,7 +33,7 @@
       color: var(--primary-color);
       margin-left: 5px;
       text-align: center;
-      background-color: var(--secondary-color);
+      /* background-color: var(--secondary-color); */
       
     }
   
@@ -64,7 +65,7 @@
     .secondblock {
       height: 180px;
       width: 100%;
-      background-image: url(https://raw.githubusercontent.com/HibiAdelei/portfolio/main/assets/images/techbackground.png);
+      background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-blue-smart-light-tech-background-backgroundlight-effect-backgroundelectronic-image_81225.jpg);
       background-size: cover;
       background-position: center;
       display: flex;
@@ -155,7 +156,7 @@
     .gallery {
       display: grid;
       grid-template-columns: repeat(2, 100px);
-      grid-template-rows: repeat(2, 100px);
+      grid-template-rows: repeat(2, 50);
       grid-gap: 15px;
       margin-left: 30px;     
       
@@ -169,12 +170,12 @@
    figcaption {
     position: absolute;
     margin-left: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 14px;
     font-weight: bold;
-    color:  rgba(26, 33, 70, 0.932);
+    color:  var(--primary-color);
     border: dashed 2px var(--primary-color);
-    background-color: rgba(229, 232, 238, 0.384);
+    background-color: rgb(72, 67, 87);
     text-align: center;
   }
 
@@ -204,7 +205,7 @@
     }
 
     
-/* extra cards commented out until projects built to suit them. 
+extra cards commented out until projects built to suit them. 
   *TODO: play with spacing and maybe rebuild grid to make cards fit neater.
     .card-3 {
       grid-column-start: 1;
@@ -214,11 +215,11 @@
 
     }
 
-    .card-4 {
-      grid-column-start: 2;
+    /* .card-4 {
+      grid-column-start: 4;
       grid-column-end: 3;
       grid-row-start: 4;
-      grid-row-end: 5;
+      grid-row-end: 6;
 
     } */
 
@@ -230,18 +231,19 @@
     }
 
     .contact-info {
-      display: flex;
+      display: flex-row;
       flex-wrap: wrap;
       
 
     }
+    
 .contact-info li a {
-flex-wrap: nowrap;
-margin-left: 10px;
+flex-wrap: wrap;
+margin-left: 1em;
 list-style: none;
 font-size: smaller;
 color: #8596bb;
-justify-content:center;
+justify-content:left;
 
 
 
@@ -271,4 +273,16 @@ justify-content:center;
         header nav ul li a {
           font-size: 14px;
           font-weight: bolder;
+          list-style:none;
         }
+
+       
+      }
+
+      ul {
+        font-size: 20px;
+        flex-wrap: wrap;
+        display: -ms-inline-flexbox;
+        list-style-type: disc;
+      
+      }
